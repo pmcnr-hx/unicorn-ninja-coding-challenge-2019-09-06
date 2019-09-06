@@ -1,0 +1,22 @@
+{
+  "name": "unicorn-ninja-coding-challenge-2019-08-23",
+  "version": "1.0.0",
+  "description": "Unicorn Ninja Coding Challenge for 2019-08-23",
+  "main": "challenge.js",
+  "repository": "git@github.com:pmcnr-hx/unicorn-ninja-coding-challenge-2019-08-23.git",
+  "author": "Pedro Romano <pedro.romano@holidayextras.com>",
+  "license": "Unlicense",
+  "private": false,
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.0.2",
+    "jest": "24.9.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
