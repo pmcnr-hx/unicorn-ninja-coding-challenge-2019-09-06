@@ -12,7 +12,7 @@ const getAscendingAndDescendingInts = (number) => {
   }
 
   let ascParts = parts.sort()
-  let descParts = [].concat(ascParts).reverse()
+  let descParts = ascParts.slice().reverse()
 
   const asc = (ascParts[0] * 1000) + (ascParts[1] * 100) + (ascParts[2] * 10) + ascParts[3]
   const desc = (descParts[0] * 1000) + (descParts[1] * 100) + (descParts[2] * 10) + descParts[3]
