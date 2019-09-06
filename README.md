@@ -2,7 +2,7 @@
 
 # :unicorn: Unicorn Ninja Coding Challenge for 2019-09-06
 
-(Adapted from: [_Daily Coding Challenge_](https://www.dailycodingproblem.com/) @ 2019-08-21.)
+(Adapted from: [_Daily Coding Problem_](https://www.dailycodingproblem.com/) @ 2019-08-21.)
 
 The number `6174` is known as Kaprekar's contant, after the mathematician who discovered an associated property: for all four-digit numbers with at least two distinct digits, repeatedly applying a simple procedure eventually results in this value. The procedure is as follows:
 
@@ -21,7 +21,7 @@ For bonus :unicorn: points, can you find a purely numerical solution for the pro
 
 :warning: Note that you should only use the standard library of your language of choice (no external packages allowed).
 
-If you choose to implement your solution using Node.js, this challenge comes with a unit test suite, which can be used to verify the correctness of your solution, which can be run with `npm test` or `yarn test`. Adjust your implementation to the expectations of `challenge.test.js`.
+If you choose to implement your solution using Node.js, this challenge comes with a unit test suite, which can be used to verify the correctness of your solution, and can be run with `npm test` or `yarn test`. Adjust your implementation to the expectations of `challenge.test.js`.
 
 # Rules of engagement
 
