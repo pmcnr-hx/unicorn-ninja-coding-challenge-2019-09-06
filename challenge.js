@@ -27,7 +27,7 @@ const kaprekarsConstantSteps = number => {
 
   while (result !== 6174) {
     totalIterations++
-    result = getAscendingAndDescendingInts(result)
+    ascDescObj = getAscendingAndDescendingInts(result)
     result = ascDescObj.desc - ascDescObj.asc
   }
 
