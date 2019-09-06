@@ -11,22 +11,11 @@ const getAscendingAndDescendingInts = (number) => {
     parts = Array.from(parts, p => p || 0)
   }
 
-  let ascMultiplier = 1000
-  let descMultiplier = 1000
   let ascParts = parts.sort()
   let descParts = [].concat(ascParts).reverse()
 
-  const asc = ascParts.reduce((total, part) => {
-    total += (part * ascMultiplier)
-    ascMultiplier /= 10
-    return total
-  }, 0)
-
-  let desc = descParts.reduce((total, part) => {
-    total += (part * descMultiplier)
-    descMultiplier /= 10
-    return total
-  }, 0)
+  const asc = (ascParts[0] * 1000) + (ascParts[1] * 100) + (ascParts[2] * 10) + ascParts[3]
+  const desc = (descParts[0] * 1000) + (descParts[1] * 100) + (descParts[2] * 10) + descParts[3]
 
   return { asc, desc }
 }
@@ -38,7 +27,7 @@ const kaprekarsConstantSteps = number => {
 
   while (result !== 6174) {
     totalIterations++
-    ascDescObj = getAscendingAndDescendingInts(result)
+    result = getAscendingAndDescendingInts(result)
     result = ascDescObj.desc - ascDescObj.asc
   }
 
