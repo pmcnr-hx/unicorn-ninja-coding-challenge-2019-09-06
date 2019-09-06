@@ -22,12 +22,11 @@ const getAscendingAndDescendingInts = (number) => {
 
 const kaprekarsConstantSteps = number => {
   let totalIterations = 0;
-  let ascDescObj;
   let result = number;
 
   while (result !== 6174) {
     totalIterations++
-    ascDescObj = getAscendingAndDescendingInts(result)
+    let ascDescObj = getAscendingAndDescendingInts(result)
     result = ascDescObj.desc - ascDescObj.asc
   }
 
